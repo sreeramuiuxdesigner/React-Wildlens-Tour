@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.navBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1.5rem 2rem;
+    position: fixed;
+    border-bottom: 1px solid rgb(231, 231, 231);
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+
+    .logoDiv{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        span{
+            color: black;
+            font-size: var(h3FontSize);
+            justify-content: center;
+        }
+}
+
+@media screen and (max-width: 750px)
+{
+    .menu{
+        position: absolute;
+        width: 70%;
+        top: 8rem;
+        right: 50%;
+        background: rgb(225, 224, 224);
+        left: 50%;
+        transform: translate(-50%);
+        padding: 2rem;
+        border-radius: 10px;
+    }
+}
+
+}
+
+.menu{
+    position: absolute;
+    width: 70%;
+    top: -100rem;
+    right: 50%;
+    background: rgb(237, 237, 237);
+    left: 50%;
+    transform: translate(-50%);
+        padding: 2rem;
+        border-radius: 10px;
+        transition: .8s ease-in-out;
+        backdrop-filter: blur(5px);
+        box-shadow: 0 2px 3px 4px blanchedalmond;
+
+        li{
+            font-size: var(--h2FontSize);
+            font-weight: 500;
+            padding: 1rem 0;
+            text-align: center;
+            cursor: pointer;
+            &:hover{
+                color: var(--primaryColor);
+                border-bottom: 1.5px solid rgb(76, 104, 161);
+            }
+        }
+}
+
+.btn{
+    background-color: rgb(244, 79, 79);
+    border-radius: 10px;
+    transition: 0.5s;
+    
+}
+
+.btn:hover{
+    background-color: rgb(210, 56, 56);
+    border-radius: 10px;
+    color: white;
+}
+
+@media screen and (max-width: 767px) {
+
+}
+
+.menuIcon, .closeIcon{
+     font-size: 25px;
+     &:hover{
+        color: red;
+     }
+}
+
+.closeIcon{
+    position: absolute;
+    bottom: -15px;
+    right: 50%;
+    left: 50%;
+    color: black;
+    transform: translate(-50%);
+}
+
+.showNavbar{
+    top: 8rem;
+}
